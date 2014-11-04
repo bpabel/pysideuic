@@ -17,9 +17,10 @@ Usage
 The `loadUi()` function takes a path to .ui file and an object to load it onto.
 
 ```python
+from PySide import QtGui
 from pysideuic import loadUi
 
-class MyWidget(QWidget):
+class MyWidget(QtGui.QWidget):
 
     def __init__(self, *args, **kwargs):
         super(MyWidget, self).__init__(*args, **kwargs)
